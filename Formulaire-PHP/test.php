@@ -8,10 +8,15 @@
 </head>
 <body>
     <?php 
-        $version = 7;
+        $var1 = 7;
+        $var2 = 98;
         
-        echo "hi, me it's Younes i descovery the PHP version $version"
+        function myfucntion(){
+            echo $GLOBALS['var1'] + $GLOBALS['var2'];
+        }
 
+        myfucntion();
+        
     ?>
 </body>
 </html>
