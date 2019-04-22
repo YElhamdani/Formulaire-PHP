@@ -8,15 +8,17 @@
 </head>
 <body>
     <?php 
-        $var1 = 7;
-        $var2 = 98;
-        
+       
         function myfucntion(){
-            echo $GLOBALS['var1'] + $GLOBALS['var2'];
+            static $var1 = 2;
+            $var1++;
+            echo $var1;
         }
 
         myfucntion();
-        
+        myfucntion();
+        myfucntion();
+        myfucntion();
     ?>
 </body>
 </html>
