@@ -8,17 +8,15 @@
 </head>
 <body>
     <?php 
-       
-        function myfucntion(){
-            static $var1 = 2;
-            $var1++;
-            echo $var1;
-        }
+       class car {
+           function __constructor(){
+                $this->color = "blue";
+           }
+       }
 
-        myfucntion();
-        myfucntion();
-        myfucntion();
-        myfucntion();
+       $mycar = new car();
+       var_dump($mycar);
+    
     ?>
 </body>
 </html>
