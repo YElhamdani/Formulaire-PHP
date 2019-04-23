@@ -8,15 +8,14 @@
 </head>
 <body>
     <?php 
-       class car {
-           function __constructor(){
-                $this->color = "blue";
-           }
-       }
+       
+     define("MON_URL","google.com");
 
-       $mycar = new car();
-       var_dump($mycar);
-    
+     function myfunction(){
+        echo "Le site ". MON_URL . " c'est de la balle !";
+     }
+
+     myfunction();
     ?>
 </body>
 </html>
