@@ -8,14 +8,12 @@
 </head>
 <body>
     <?php 
-       
-     define("MON_URL","google.com");
-
-     function myfunction(){
-        echo "Le site ". MON_URL . " c'est de la balle !";
-     }
-
-     myfunction();
+        function maFunction($message, $time){
+            for ($i = 0; $i < $time; $i++) { 
+                echo "$message <br>";
+            }
+        }
+      maFunction("Avec les San'Shyuums, les Sangheilis fondèrent l'Alliance Covenante à l'issue de la War of Beginnings. Après plus d'un millénaire de domination militaire, l'autorité des Sangheilis fut contestée à partir de 2525 par les Jiralhanaes, selon les plans du Haut Prophète de la Vérité de les remplacer par des guerriers plus manipulables <br>", 5);
     ?>
 </body>
 </html>
