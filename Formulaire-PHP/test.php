@@ -8,12 +8,7 @@
 </head>
 <body>
     <?php 
-        function myfunction($x, $y){
-            return $x + $y;
-            s
-        }
-
-        echo myfunction(9,29);
+       
     ?>
 </body>
 </html>
